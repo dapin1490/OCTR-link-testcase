@@ -57,16 +57,16 @@
 
 ## 5. 버튼 UI 및 이벤트
 
-- [ ] **5.1** `.problem-menu` 요소를 `querySelector` 등으로 선택
-- [ ] **5.2** `document.createElement('li')` 로 `li` 생성, 그 안에 `<a href="#" id="octr-link-button">OCTR로 풀기</a>` 삽입  
+- [x] **5.1** `.problem-menu` 요소를 `querySelector` 등으로 선택
+- [x] **5.2** `document.createElement('li')` 로 `li` 생성, 그 안에 `<a href="#" id="octr-link-button">OCTR로 풀기</a>` 삽입  
   - 기존 메뉴가 `li > a` 구조이므로 동일하게 맞춤
-- [ ] **5.3** `.problem-menu`의 **마지막 자식**으로 해당 `li`를 `appendChild` 로 추가
-- [ ] **5.4** `#octr-link-button`(또는 동일 id/선택자)에 클릭 리스너 등록  
+- [x] **5.3** `.problem-menu`의 **마지막 자식**으로 해당 `li`를 `appendChild` 로 추가
+- [x] **5.4** `#octr-link-button`(또는 동일 id/선택자)에 클릭 리스너 등록  
   - `event.preventDefault()` 로 기본 링크 동작 방지  
   - 위 3~4단계 로직 호출: 파싱 → JSON → 압축 → URL 생성  
   - 테스트 케이스 0개면 안내 메시지 후 `return`  
   - 그 외: `window.open(생성된_URL, '_blank')` 호출
-- [ ] **5.5** (선택) 기존 메뉴와 비슷한 스타일을 위해 `a`에 클래스 추가하거나, 기존 메뉴 `a`와 동일한 클래스 적용
+- [x] **5.5** (선택) 기존 메뉴와 비슷한 스타일을 위해 `a`에 클래스 추가하거나, 기존 메뉴 `a`와 동일한 클래스 적용
 
 ---
 
