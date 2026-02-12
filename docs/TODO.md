@@ -44,14 +44,14 @@
 
 ## 4. JSON 구성 및 압축
 
-- [ ] **4.1** 파싱 결과를 다음 형태의 객체로 구성  
+- [x] **4.1** 파싱 결과를 다음 형태의 객체로 구성  
   `{ "testCases": [ { "input": "...", "expectedOutput": "..." }, ... ] }`
-- [ ] **4.2** `JSON.stringify()` 로 직렬화
-- [ ] **4.3** `LZString.compressToEncodedURIComponent(jsonString)` 호출  
+- [x] **4.2** `JSON.stringify()` 로 직렬화
+- [x] **4.3** `LZString.compressToEncodedURIComponent(jsonString)` 호출  
   - lz-string을 스크립트로 불러왔으므로 전역 `LZString` 사용
-- [ ] **4.4** 최종 URL 생성:  
+- [x] **4.4** 최종 URL 생성:  
   `https://dapin1490.github.io/online-cote-runner/#data=${압축된문자열}`
-- [ ] **4.5** 테스트 케이스 0개일 때: URL을 만들지 않고, 사용자에게 안내 메시지 표시 (예: `alert('예제 테스트 케이스가 없습니다.')` 또는 동일 의미 문구)
+- [x] **4.5** 테스트 케이스 0개일 때: URL을 만들지 않고, 사용자에게 안내 메시지 표시 (예: `alert('예제 테스트 케이스가 없습니다.')` 또는 동일 의미 문구)
 
 ---
 

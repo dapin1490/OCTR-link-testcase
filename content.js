@@ -31,3 +31,8 @@ if (testCases.length === 0) {
     alert('예제 테스트 케이스가 없습니다.');
     return;
 }
+
+const payload = { testCases: testCases };
+const jsonString = JSON.stringify(payload);
+const compressed = LZString.compressToEncodedURIComponent(jsonString);
+const url = `https://dapin1490.github.io/online-cote-runner/#data=${compressed}`;
