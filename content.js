@@ -71,6 +71,10 @@ if (!problemMenu) {
     console.warn('problem-menu 요소를 찾지 못했습니다.');
     return;
 }
+if (document.querySelector('#octr-link-button')) {
+    // 이미 버튼이 있으면 다시 만들지 않음
+    return;
+}
 
 const li = document.createElement('li');
 
