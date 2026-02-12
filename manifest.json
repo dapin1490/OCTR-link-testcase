@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "BOJ to OCTR",
+    "version": "1.0.0",
+    "description": "백준 예제를 online-cote-runner로 보냅니다.",
+    "content_scripts": [
+        {
+            "matches": ["https://www.acmicpc.net/problem/*"],
+            "js": ["lib/lz-string.min.js", "content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "host_permissions": ["https://www.acmicpc.net/*"],
+    "icons": {
+        "16": "icons/favicon-16x16.png",
+        "32": "icons/favicon-32x32.png",
+        "48": "icons/favicon.ico",
+        "192": "icons/android-chrome-192x192.png",
+        "512": "icons/android-chrome-512x512.png"
+    }
+}

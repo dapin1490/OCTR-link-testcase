@@ -6,9 +6,9 @@
 
 ## 1. 프로젝트 구조 및 의존성
 
-- [ ] **1.1** 확장 프로그램 루트 디렉터리 구조 정하기  
+- [x] **1.1** 확장 프로그램 루트 디렉터리 구조 정하기  
   - 예: `manifest.json`, `content.js`, `lib/`(또는 `vendor/`), 필요 시 `icons/`
-- [ ] **1.2** `lz-string.min.js` 다운로드 후 프로젝트에 포함  
+- [x] **1.2** `lz-string.min.js` 다운로드 후 프로젝트에 포함  
   - [npm/lz-string](https://www.npmjs.com/package/lz-string) 또는 [공식 저장소](https://github.com/pieroxy/lz-string)에서 `libs/lz-string.min.js` 복사  
   - 경로 예: `lib/lz-string.min.js` (manifest에서 content script보다 먼저 로드되도록 설정할 예정)
 
@@ -16,15 +16,15 @@
 
 ## 2. Manifest (Manifest V3)
 
-- [ ] **2.1** `manifest.json` 생성, `manifest_version: 3` 명시
-- [ ] **2.2** `name`, `version`, `description` 등 메타데이터 작성
-- [ ] **2.3** `content_scripts` 설정  
+- [x] **2.1** `manifest.json` 생성, `manifest_version: 3` 명시
+- [x] **2.2** `name`, `version`, `description` 등 메타데이터 작성
+- [x] **2.3** `content_scripts` 설정  
   - `matches`: `["https://www.acmicpc.net/problem/*"]`  
   - `js`: lz-string 먼저, 그다음 content 스크립트 (예: `["lib/lz-string.min.js", "content.js"]`)  
   - `run_at`: `"document_idle"` (DOM 준비 후 실행 권장)
-- [ ] **2.4** `host_permissions` (필요 시): `["https://www.acmicpc.net/*"]`  
+- [x] **2.4** `host_permissions` (필요 시): `["https://www.acmicpc.net/*"]`  
   - content script가 해당 페이지 DOM에 접근하는 데 필요
-- [ ] **2.5** 아이콘(선택): `icons/` 에 16x16, 48x48 등 지정 시 확장 아이콘 표시
+- [x] **2.5** 아이콘(선택): `icons/` 에 16x16, 48x48 등 지정 시 확장 아이콘 표시
 
 ---
 
